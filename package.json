@@ -10,21 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/chrisjshull/homebridge-nest.git"
+    "url": "git://github.com/johnpearce/homebridge-nest-jp.git"
   },
   "deprecated": false,
-  "description": "Nest Thermostat and Protect plug-in for homebridge",
+  "description": "Nest camera motion plug-in for homebridge",
   "engines": {
     "homebridge": ">=0.2.5",
     "node": ">=7.0.0"
   },
-  "homepage": "https://github.com/chrisjshull/homebridge-nest#readme",
+  "homepage": "https://github.com/johnpearce/homebridge-nest-jp",
   "keywords": [
     "homebridge-plugin",
     "nest"
   ],
   "license": "ISC",
-  "name": "homebridge-nest",
+  "name": "homebridge-nest-jp",
   "preferGlobal": true,
   "scripts": {
     "lint": "eslint lib *.js",
@@ -39,7 +39,7 @@
         "node": ">=7.0.0",
         "homebridge": ">=0.2.5"
       },
-      "pkgid": "homebridge-nest@3.5.2"
+      "pkgid": "homebridge-nest-jp@3.5.2"
     }
   ]
 }
