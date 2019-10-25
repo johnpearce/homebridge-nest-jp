@@ -18,11 +18,11 @@ module.exports = function(homebridge) {
     };
 
     require('./lib/nest-device-accessory.js')(exportedTypes); // eslint-disable-line global-require
-    ThermostatAccessory = require('./lib/nest-thermostat-accessory.js')(exportedTypes); // eslint-disable-line global-require
+    // ThermostatAccessory = require('./lib/nest-thermostat-accessory.js')(exportedTypes); // eslint-disable-line global-require
     HomeAwayAccessory = require('./lib/nest-homeaway-accessory.js')(exportedTypes); // eslint-disable-line global-require
-    TempSensorAccessory = require('./lib/nest-tempsensor-accessory.js')(exportedTypes); // eslint-disable-line global-require
-    ProtectAccessory = require('./lib/nest-protect-accessory.js')(exportedTypes); // eslint-disable-line global-require
-    // CamAccessory = require('./lib/nest-cam-accessory.js')(exportedTypes); // eslint-disable-line global-require
+    // TempSensorAccessory = require('./lib/nest-tempsensor-accessory.js')(exportedTypes); // eslint-disable-line global-require
+    // ProtectAccessory = require('./lib/nest-protect-accessory.js')(exportedTypes); // eslint-disable-line global-require
+    CamAccessory = require('./lib/nest-cam-accessory.js')(exportedTypes); // eslint-disable-line global-require
 
     homebridge.registerPlatform('homebridge-nest', 'Nest', NestPlatform);
 };
@@ -96,11 +96,11 @@ NestPlatform.prototype = {
                 }
             }.bind(this);
 
-            loadDevices(ThermostatAccessory);
+            // loadDevices(ThermostatAccessory);
             loadDevices(HomeAwayAccessory);
-            loadDevices(TempSensorAccessory);
-            loadDevices(ProtectAccessory);
-            // loadDevices(CamAccessory);
+            // loadDevices(TempSensorAccessory);
+            // loadDevices(ProtectAccessory);
+            loadDevices(CamAccessory);
 
             return foundAccessories;
         }.bind(this);
