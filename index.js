@@ -2,7 +2,9 @@ const NestConnection = require('./lib/nest-connection.js');
 const Promise = require('bluebird');
 
 let Service, Characteristic, Accessory, uuid;
-let ThermostatAccessory, HomeAwayAccessory, TempSensorAccessory, ProtectAccessory; //, CamAccessory;
+//let ThermostatAccessory, HomeAwayAccessory, TempSensorAccessory, ProtectAccessory; //, CamAccessory;
+let HomeAwayAccessory, CamAccessory;
+
 
 module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
